@@ -1,4 +1,5 @@
-import java.util.List;
+import lista_ligada.ListaEncadeada;
+
 import java.util.Scanner;
 
 public class Menu {
@@ -7,6 +8,7 @@ public class Menu {
         Scanner sc = new Scanner(System.in);
         //Declaração de objetos!
         Vetor v = new Vetor();
+        ListaEncadeada lista = new ListaEncadeada();
         ListaEncadeada l = new ListaEncadeada();
         //Inicio do menu!
         System.out.println("Qual conteúdo deseja visualizar?");
@@ -27,8 +29,7 @@ public class Menu {
                 }
                 break;
             case 2:
-                System.out.println("Digite qual método deseja executar!");
-                System.out.println("1 - \n2 - \n3 - ");
+                System.out.println(lista.getTamanho());
         }
     }
 }
